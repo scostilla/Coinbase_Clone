@@ -28,6 +28,12 @@ const Header = () => {
           <Button color='secondary' onClick={() => handleOpen('pay')}>
             Send / Receive
           </Button>
+          <Button color='secondary' onClick={() => handleOpen('contact')}>
+            Contact US
+          </Button>
+          <Button color='secondary' onClick={() => handleOpen('darkMode')}>
+            Dark Mode
+          </Button>
           <div className='header__verticalLine'></div>
           <div className='header__avatar' onClick={() => handleOpen('profile')}>
             <Avvvatars value={user?.email || 'Guest'} size={35} />
