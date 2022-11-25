@@ -31,9 +31,6 @@ const Header = () => {
           <Button color='secondary' onClick={() => handleOpen('pay')}>
             Send / Receive
           </Button>
-          <Button color='secondary' onClick={() => handleOpen('contact')}>
-            Contact US
-          </Button>
           
             <Button color='secondary' onClick={toggleTheme}>
             {themeName === "light" ? "Dark Mode" : "Light Mode"}

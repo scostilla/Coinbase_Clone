@@ -12,6 +12,8 @@ import {
 import { AssetsContext } from '../contexts/AssetsContext';
 import { useContext } from 'react';
 import useMediaQuery from '../hooks/useMediaQuery';
+  
+  import ContactUs from './ContactUs';
 
 const Assets = () => {
   const isWidthMin1150 = useMediaQuery('(min-width: 1150px)');
@@ -30,6 +32,10 @@ const Assets = () => {
         <Section>
           <SectionTitle title='Watchlist' />
           <TableAssets assets={coinsOnWatchlist} />
+        </Section>
+        <Section>
+          <SectionTitle title='Contact Us' />
+          <ContactUs />
         </Section>
       </ContentCenter>
       {isWidthMin1150 && (
