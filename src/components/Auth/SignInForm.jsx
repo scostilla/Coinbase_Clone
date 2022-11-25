@@ -47,6 +47,7 @@ const SignInForm = () => {
         onChange={(e) => setSignInPassword(e.target.value)}
       />
       <Button type='submit'>Sign in with Email</Button>
+      <Button type='submit'>Sign in Google</Button>
       <Text>
         Don't have an account yet? <a href='/signup'>Sign up</a>
       </Text>

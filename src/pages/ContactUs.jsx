@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './ContactUs.css';
 
+import Button from '../components/Button/Button';
+
 const ContactUs = () => {
 
   const [data, setData] = useState({
@@ -53,13 +55,13 @@ const ContactUs = () => {
             name="message"
             onChange={handleInputChange}
           /><p/>
-          <button
+          <Button color='primary'
             type="submit"
             onClick={sendForm}
-            className="login__signInButton"
+            className="login__signInButton" margin="10px"
           >
             Send Message
-          </button>
+          </Button>
         </form>
     </div>
   );
