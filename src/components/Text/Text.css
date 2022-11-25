@@ -61,8 +61,12 @@
 	color: white;
 }
 
-.text-grey {
+#light .text-grey {
 	color: #5b616e;
+}
+
+#dark .text-grey {
+	color: #c5d1ec;
 }
 
 .text-blue {
@@ -73,8 +77,12 @@
 	color: #cf202f;
 }
 
-.text-green {
+#light .text-green {
 	color: #098551;
+}
+
+#dark .text-green {
+	color: #17fa9b;
 }
 
 .text-uppercase {

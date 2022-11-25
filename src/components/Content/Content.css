@@ -3,8 +3,17 @@
 	grid-template-columns: 67% 33%;
 	overflow-y: scroll;
 	padding: 24px 24px;
-	background-color: #f9f9fd;
+	
 }
+
+#dark .Content {
+	background-color: rgb(110, 110, 110);
+	border: 1px solid #dedfd2;
+  }
+  #light .Content {
+	background-color: rgb(233, 233, 233);
+	border: 1px solid #242422;
+  }
 
 @media (max-width: 1150px) {
 	.Content {

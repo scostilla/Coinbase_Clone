@@ -74,9 +74,14 @@ th {
 	cursor: pointer;
 }
 
-.table-has-border-bottom th,
+#light .table-has-border-bottom th,
 td {
 	border-bottom: 1px solid #d8d8d8;
+}
+
+#dark .table-has-border-bottom th,
+td {
+	border-bottom: 1px solid #333232;
 }
 
 .table-has-small-padding th:last-child,

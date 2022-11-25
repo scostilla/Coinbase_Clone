@@ -4,7 +4,16 @@
   justify-content: space-between;
   height: 35px;
   padding: 16px 24px;
+  
+}
+
+#dark .Header {
+  background-color: rgb(110, 110, 110);
   border-bottom: 1px solid #dedfd2;
+}
+#light .Header {
+  background-color: rgb(233, 233, 233);
+  border-bottom: 1px solid #242422;
 }
 
 .header__right {
@@ -14,10 +23,25 @@
 }
 
 .header__verticalLine {
-  border-left: 1px solid #dedfd2;
   width: 1px;
   height: 35px;
   margin: 0 8px;
+}
+
+#dark .header__verticalLine {
+  border-left: 1px solid #dedfd2;
+}
+
+#light .header__verticalLine {
+  color: #242422;
+}
+
+#dark .text-h1 {
+  color: #dedfd2;
+}
+
+#light .text-h1 {
+  color:#242422;
 }
 
 .header__avatar {

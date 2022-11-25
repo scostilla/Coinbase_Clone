@@ -1,16 +1,24 @@
 .Sidebar {
-	display: grid;
-	grid-template-rows: auto 1fr;
-	width: 236px;
-	border-right: 1px solid #dedfd2;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 236px;
+}
+
+#dark .Sidebar {
+  background-color: rgb(110, 110, 110);
+  border-right: 1px solid #dedfd2;
+}
+#light .Sidebar {
+  background-color: rgb(233, 233, 233);
+  border-right: 1px solid #242422;
 }
 
 .sidebar__nav {
-	margin: 16px 8px;
+  margin: 16px 8px;
 }
 
 @media (max-width: 1300px) {
-	.Sidebar {
-		width: auto;
-	}
+  .Sidebar {
+    width: auto;
+  }
 }

@@ -5,13 +5,15 @@ import { LineChart, Table, TableCellCoinName, TableCellWatch, Text } from '..';
 import { convertToCurrency } from '../../utilities/convert-to-currency';
 import { formatMarketCap } from '../../utilities/format-market-cap';
 import useMediaQuery from '../../hooks/useMediaQuery';
+import { useTheme } from '../../contexts/ThemeProvider';
 
 const TableAssets = ({ assets }) => {
   const isWidthMin800 = useMediaQuery('(min-width: 800px)');
   const isWidthMin400 = useMediaQuery('(min-width: 400px)');
+  const {theme, toggleTheme, themeName } = useTheme();
 
   return (
-    <Table>
+    <Table id={themeName}>
       {isWidthMin800 && (
         <thead>
           <tr>
