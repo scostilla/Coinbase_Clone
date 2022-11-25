@@ -1,7 +1,6 @@
 import './Header.css';
 
 import { Button, Logo, Text } from '..';
-import ReactSwitch from 'react-switch';
 import Avvvatars from 'avvvatars-react';
 import { IoMenuSharp } from 'react-icons/io5';
 import { ModalContext } from '../../contexts/ModalContext';
@@ -18,7 +17,6 @@ const Header = () => {
   const { user } = useContext(UserContext);
   const {theme, toggleTheme, themeName } = useTheme();
 
-  console.log(theme +" - "+themeName);
 
   return (
     <div className="head"  id={themeName}>
@@ -36,10 +34,10 @@ const Header = () => {
           <Button color='secondary' onClick={() => handleOpen('contact')}>
             Contact US
           </Button>
-          <label className="label">{theme === "light" ? "Modo Claro" : "Modo Oscuro"}</label>
-            <div className="switch">
-              <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
-            </div>
+          
+            <Button color='secondary' onClick={toggleTheme}>
+            {themeName === "light" ? "Dark Mode" : "Light Mode"}
+          </Button>
           <div className='header__verticalLine'></div>
           <div className='header__avatar' onClick={() => handleOpen('profile')}>
             <Avvvatars value={user?.email || 'Guest'} size={35} />
