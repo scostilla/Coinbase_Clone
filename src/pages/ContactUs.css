@@ -5,10 +5,20 @@ input[type=text], select, textarea {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
-    width:90%
+    width:90%;
+    margin-left:5%;
   }
 
   textarea{
     width:90%;
     resize: none;
+    margin-left:5%;
+  }
+  
+  h5{
+    margin-left: 5%;
+  }
+
+.submitButton{
+    margin:5%;
   }
