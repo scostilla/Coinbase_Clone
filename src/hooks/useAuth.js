@@ -6,8 +6,10 @@ import {
   signInAnonymously,
   signInWithEmailAndPassword,
   signOut,
+  signInWithPopup,
 } from 'firebase/auth';
 import { useContext, useState } from 'react';
+
 
 import { UserContext } from '../contexts/UserContext';
 import { auth } from '../firebase-config';
@@ -34,6 +36,11 @@ const useAuth = () => {
         case 'guest':
           await signInAnonymously(auth);
           setAuthError('');
+          break;
+
+          case 'google':
+          await signInWithPopup(auth,provider)
+          setAuthError('')
           break;
 
         default:

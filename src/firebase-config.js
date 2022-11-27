@@ -1,9 +1,11 @@
 import { initializeApp } from 'firebase/app';
 import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
+import firebase from "firebase/compat/app";
 
 
 
+/*
 const firebaseConfig = {
   apiKey: 'AIzaSyASa_N9o8jH4DVb2jA2b5VG-yW7wJh7JRA',
   authDomain: 'coinbase-df965.firebaseapp.com',
@@ -14,8 +16,8 @@ const firebaseConfig = {
   appId: '1:380487141709:web:4b987e997b44de6f808f04',
 };
 
-/*
-my firebase
+
+my firebase*/
 const firebaseConfig = {
   apiKey: "AIzaSyAOl71usOOAZkTdqZD8zmBnWVk0MFKNTgY",
   authDomain: "coinbase-df965.firebaseapp.com",
@@ -24,7 +26,7 @@ const firebaseConfig = {
   messagingSenderId: "380487141709",
   appId: "1:380487141709:web:4b987e997b44de6f808f04"
 };
-
+/*
 
 coinbase
 const firebaseConfig = {
@@ -43,3 +45,4 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 
 export { db, auth };
+
